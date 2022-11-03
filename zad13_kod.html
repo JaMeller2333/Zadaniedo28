@@ -1,0 +1,50 @@
+<html>
+<head>
+    <META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=UTF=8">
+</head>
+<body>
+<textarea cols="150" rows="100"> </html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>zad 13 Meller</title>
+    </head>
+    <div style="color:black;font-size:45px;">
+        <script language="JavaScript">
+            var A_meller = prompt("Podaj pierwsza liczbe  A= ",);
+            var B_meller = prompt("Podaj pierwsza liczbe  B= ",);
+            parseFloat(A_meller);
+            parseFloat(B_meller);
+
+            function potega(liczba, do_potegi) {
+                if (do_potegi == 0) {
+                    return 1;
+                    2
+                }
+                var temp = liczba;
+                for (i = 0; i < do_potegi - 1; i++) {
+                    liczba = liczba * temp;
+                }
+                return liczba;
+            }
+
+
+            var X = potega(A_meller, 3);
+            var Y = 3 * (potega(A_meller, 2) * 2);
+            var L = 3 * (A_meller) * potega(B_meller, 2)
+            var O = potega(B_meller, 3)
+
+            document.write(`Wczytane liczby:  A=${A_meller}   B=${B_meller}`);
+            document.write(`<br>`);
+            document.write(`(${A_meller}+${B_meller})^3= ${A_meller}^3 + 3*((${A_meller})^2)*(2) + 3*(${A_meller})*((${B_meller})^${2}) + ${B_meller}^3 = ${X} + ${Y} + ${L} + ${O} = ${X + Y + L + O}`);
+        </script>
+    </div>
+    <body>
+    </body>
+    </html>
+</textarea>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=UTF=8">
+</head>
+
+<body>
+    <textarea cols="150" rows="100"> </html>
+    <html>
+    
+    <head>
+        <title>
+            Zad 19
+        </title>
+        <script language="JavaScript">
+            function V(r, h) {
+                r_liczba = parseFloat(r)
+                h_liczba = parseFloat(h)
+                V_wynik = (2 * r) + (2 * h)
+                document.getElementsByName('obj')[0].value = V_wynik.toFixed(2);
+                alert("Ob=" + V_wynik.toFixed(2) + " cm");
+                pokaz1.innerHTML = "Ob=" + V_wynik.toFixed(2) + " cm" + "<br>";
+            }
+            function Pc(r, h) {
+                r_liczba = parseFloat(r)
+                h_liczba = parseFloat(h)
+                19
+                Pc_wynik = r * h
+                document.getElementsByName('pole')[0].value = Pc_wynik.toFixed(2);
+                alert("Pp=" + Pc_wynik.toFixed(2) + " cm^2");
+                pokaz2.innerHTML = "Pp=" + Pc_wynik.toFixed(2) + "cm^2";
+            }
+        </script>
+    </head>
+    
+    <body>
+        Pobliczanie obwodu i pola prostokata
+        <br> <br>
+        <form name="formularz" action="..."
+            onsubmit="V(this.promien.value,this.wysokosc.value); Pc(this.promien.value,this.wysokosc.value);return false">
+            Podaj r=
+            <input size="6" name="promien">
+            Podaj h=
+            <input size="6" name="wysokosc">
+            <br> <br>
+            <input TYPE="submit" Value="oblicz">
+            <br> <br>
+            Obw=
+            <input size="6" name="obj">
+            Pp=
+            <input size="6" name="pole">
+        </form>
+        <table>
+            <tr id="pokaz1"></tr>
+            <tr id="pokaz2"></tr>
+        </table>
+    </body>
+    
+    </html>
+</textarea>
+</body>
+
+</html>

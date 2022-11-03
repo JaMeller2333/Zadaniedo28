@@ -1,0 +1,33 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function klient(nazwisko_m,imie_m,zawod_m)
+        {
+        this.nazwisko=nazwisko_m;
+        this.imie=imie_m;
+        this.zawod=zawod_m;
+        }
+        klient.prototype.wypisz = function () 
+        {
+        alert(this.nazwisko + ' ' + this.imie+ ' ' + this.zawod);
+        };
+        var osoba1 = new klient("Gliniany", "Czerwony", "kwiaty"); 
+        var osoba2 = new klient('Porcelanowy', 'Biały', 'Niebieskie paski');
+        var osoba3 = new klient('Szklany', 'Przeźroczysty', 'brak');
+        osoba1.wypisz(); 
+        osoba2.wypisz();
+        osoba3.wypisz();
+        
+        document.write("wazon pierwszy"+" "+osoba1.nazwisko+" "+osoba1.imie+" "+osoba1.zawod );
+        document.write("<br>");
+        document.write("wazon drugi  " + " " + osoba2.nazwisko + " " + osoba2.imie + " " + osoba2.zawod);
+        document.write("<br>");
+        document.write("wazon tzreci " + " " + osoba3.nazwisko + " " + osoba3.imie + " " + osoba3.zawod);
+        document.write("<br>");
+    </script>
+</head>
+<body>
+<br>
+programowanie obiektowe
+</body>
+</html>

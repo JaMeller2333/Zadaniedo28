@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Zadanie 14a rygonometria</title>
+	<script language="JavaScript">
+		var b_mel=prompt("b=","");
+		var c_mel=prompt("c=","");
+		var a_mel;
+		var c=parseFloat(c_mel);
+		var b=parseFloat(b_mel);
+		var a=parseFloat(a_mel);
+		
+		
+		
+		a_mel=Math.sqrt((Math.pow(c_mel,2))-(Math.pow(b_mel,2)));
+		
+		var cosalfa= b_mel/c_mel;
+		var tgaalfa= a_mel/b_mel ;
+		var sinalfa= a_mel/c_mel;
+		var ctgalfa= b_mel/a_mel;
+		
+		document.write("cos(alfa)= "+cosalfa.toFixed(2)+" <br>" );
+		document.write("sin(alfa)= "+sinalfa.toFixed(2)+" <br>" );
+		document.write("tga(alfa)= "+tgaalfa.toFixed(2)+" <br>" );
+		document.write("ctg(alfa)= "+ctgalfa.toFixed(2)+" <br>" );
+	</script>
+</head>
+<body>
+</body>
+</html>
